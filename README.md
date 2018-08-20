@@ -26,7 +26,7 @@ The Ruby script `currency.rb` in the `transformer` directory generates a SHA 256
  #### FromCurrencyName
  
  ```go
-currency, err := currency.FromCurrencyName("US Dollar")
+curr, err := currency.FromCurrencyName("US Dollar")
 if err != nil {
  	// ...
  }
