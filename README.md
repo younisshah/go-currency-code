@@ -15,6 +15,8 @@ The Ruby script `currency.rb` in the `transformer` directory generates a SHA 256
 #### All()
 
  ```go
+ currency "github.com/younisshah/go-currency-code"
+ 
  currencyMap, err := currency.All()
  if err != nil {
  	// ...
@@ -26,6 +28,8 @@ The Ruby script `currency.rb` in the `transformer` directory generates a SHA 256
  #### FromCurrencyName
  
  ```go
+currency "github.com/younisshah/go-currency-code"
+ 
 curr, err := currency.FromCurrencyName("US Dollar")
 if err != nil {
  	// ...
@@ -37,6 +41,8 @@ if err != nil {
  #### WriteJSON
  
  ```go
+currency "github.com/younisshah/go-currency-code"
+
 err := currency.WriteJSON(2, os.Stdout)
 
 /*
